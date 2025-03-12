@@ -44,7 +44,8 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        {/* Fixed positioning for scroll down arrow to center it properly on all devices */}
+        <div className="absolute left-0 right-0 bottom-10 mx-auto flex justify-center animate-bounce">
           <div className="flex flex-col items-center">
             <span className="text-sm font-medium mb-2">Scroll Down</span>
             <svg 
