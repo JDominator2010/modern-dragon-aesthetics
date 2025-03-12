@@ -38,16 +38,16 @@ const AnimatedBackground: React.FC = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const particleCount = Math.min(100, Math.floor(window.innerWidth / 15)); // Increased particle count
+    const particleCount = Math.min(150, Math.floor(window.innerWidth / 10)); // Increased particle count
     const newParticles: Particle[] = [];
 
     for (let i = 0; i < particleCount; i++) {
       newParticles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.8, // Increased speed
-        vy: (Math.random() - 0.5) * 0.8, // Increased speed
-        radius: Math.random() * 2.5 + 1.5 // Increased size
+        vx: (Math.random() - 0.5) * 1.2, // Increased speed
+        vy: (Math.random() - 0.5) * 1.2, // Increased speed
+        radius: Math.random() * 3 + 2 // Increased size
       });
     }
 
@@ -65,7 +65,7 @@ const AnimatedBackground: React.FC = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // Update and draw particles
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.8)'; // Increased opacity for better visibility
+    ctx.fillStyle = 'rgba(0, 0, 0, 1)'; // Full opacity for dots
     
     particles.current.forEach((particle, i) => {
       // Move particle
@@ -88,10 +88,10 @@ const AnimatedBackground: React.FC = () => {
           const dy = particle.y - otherParticle.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          if (distance < 180) { // Increased connection distance
+          if (distance < 200) { // Increased connection distance
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(0, 0, 0, ${0.25 * (1 - distance / 180)})`; // Increased opacity
-            ctx.lineWidth = 1; // Increased line width
+            ctx.strokeStyle = `rgba(0, 0, 0, ${0.5 * (1 - distance / 200)})`; // Increased opacity
+            ctx.lineWidth = 1.5; // Increased line width
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(otherParticle.x, otherParticle.y);
             ctx.stroke();
