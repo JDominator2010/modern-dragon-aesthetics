@@ -11,52 +11,16 @@ interface TeamMember {
 const TeamSection: React.FC = () => {
   const teamMembers: TeamMember[] = [
     {
-      name: "Alex Johnson",
-      role: "Team Captain & Lead Engineer",
-      bio: "Four-year robotics veteran specializing in mechanical design and strategic planning. Aspiring aerospace engineer.",
-      image: "https://placehold.co/300x300/333333/FFFFFF/png?text=AJ"
+      name: "Jackson Norber",
+      role: "Lead Programmer & Co-Captain",
+      bio: "Responsible for robot control systems and strategic planning. Passionate about coding and robotics engineering.",
+      image: "https://placehold.co/300x300/333333/FFFFFF/png?text=JN"
     },
     {
-      name: "Sam Rivera",
-      role: "Lead Programmer",
-      bio: "Responsible for robot control systems and autonomous routines. Passionate about AI and machine learning.",
-      image: "https://placehold.co/300x300/333333/FFFFFF/png?text=SR"
-    },
-    {
-      name: "Taylor Chen",
-      role: "Design Specialist",
-      bio: "Focuses on CAD design and structural integrity. Combines artistic vision with technical precision.",
-      image: "https://placehold.co/300x300/333333/FFFFFF/png?text=TC"
-    },
-    {
-      name: "Jordan Smith",
-      role: "Fabrication Lead",
-      bio: "Expert in translating designs into physical components. Skilled in various fabrication techniques.",
-      image: "https://placehold.co/300x300/333333/FFFFFF/png?text=JS"
-    },
-    {
-      name: "Riley Patel",
-      role: "Strategy & Analytics",
-      bio: "Analyzes competition patterns and optimizes robot performance. Data-driven approach to robotics.",
-      image: "https://placehold.co/300x300/333333/FFFFFF/png?text=RP"
-    },
-    {
-      name: "Quinn Williams",
-      role: "Electronics Specialist",
-      bio: "Manages sensor integration and power systems. Creating reliable electrical systems for optimal performance.",
-      image: "https://placehold.co/300x300/333333/FFFFFF/png?text=QW"
-    },
-    {
-      name: "Casey Miller",
-      role: "Outreach Coordinator",
-      bio: "Handles team promotion and community engagement. Passionate about inspiring future engineers.",
-      image: "https://placehold.co/300x300/333333/FFFFFF/png?text=CM"
-    },
-    {
-      name: "Dr. Lee Parker",
-      role: "Faculty Advisor",
-      bio: "Engineering teacher with background in industrial robotics. Provides technical guidance and mentorship.",
-      image: "https://placehold.co/300x300/333333/FFFFFF/png?text=LP"
+      name: "Bobby Seiter",
+      role: "Main Driver & Co-Captain",
+      bio: "Expert in robot operation and competition strategy. Skilled at navigating high-pressure competitive environments.",
+      image: "https://placehold.co/300x300/333333/FFFFFF/png?text=BS"
     }
   ];
 
@@ -69,12 +33,12 @@ const TeamSection: React.FC = () => {
           </div>
           <h2 className="text-4xl font-bold">Meet The Dragon Brothers</h2>
           <p className="max-w-3xl mx-auto text-gray-600">
-            Our diverse team brings together specialized skills, creative problem-solving, 
-            and a shared passion for robotics excellence.
+            A powerful duo bringing together specialized skills, tactical operation,
+            and shared passion for robotics excellence.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-3xl mx-auto">
           {teamMembers.map((member, index) => (
             <div 
               key={index} 
