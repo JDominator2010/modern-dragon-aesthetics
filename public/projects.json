@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "Trogdor",
+    "year": "2023-2024",
+    "description": "Our flagship competition robot designed for the VEX Robotics Competition, featuring advanced mecanum drive system and high-stakes scoring capabilities.",
+    "achievements": [
+      "Event Champion - Ladue Tournament",
+      "Quarter Finalist - State Championship"
+    ],
+    "features": [
+      "4-motor mecanum drivetrain with strafing capabilities",
+      "Autonomous routines with PID and slew control",
+      "Fishmech high stakes mechanism",
+      "Precision control systems"
+    ],
+    "image": "https://placehold.co/600x400/333333/FFFFFF/png?text=Trogdor"
+  },
+  {
+    "id": 2,
+    "title": "Project Phoenix",
+    "year": "2022-2023",
+    "description": "A high-speed competition robot designed for maximum agility and performance, with a custom-built claw mechanism and vision system.",
+    "achievements": [
+      "Semi-Finalist - Regional Championship",
+      "Best Design Award - Innovation Expo"
+    ],
+    "features": [
+      "High-speed drivetrain with omnidirectional movement",
+      "Vision system for object detection",
+      "Custom claw for precise object manipulation",
+      "Automatic scoring feature"
+    ],
+    "image": "https://placehold.co/600x400/333333/FFFFFF/png?text=Project+Phoenix"
+  },
+  {
+    "id": 3,
+    "title": "RoboCrusher",
+    "year": "2021-2022",
+    "description": "A defensive robot built to control the field and disrupt opponent strategies. Featuring a powerful lifting mechanism and durable construction.",
+    "achievements": [
+      "Finalist - State Championship",
+      "Outstanding Design Award - Regional Qualifiers"
+    ],
+    "features": [
+      "Heavy-duty lifting arm for opponent control",
+      "Durable construction to withstand collisions",
+      "Efficient autonomous defense routines",
+      "Advanced telemetry for real-time performance monitoring"
+    ],
+    "image": "https://placehold.co/600x400/333333/FFFFFF/png?text=RoboCrusher"
+  }
+]
