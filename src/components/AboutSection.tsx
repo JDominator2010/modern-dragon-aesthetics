@@ -3,9 +3,9 @@ import React from 'react';
 
 const AboutSection: React.FC = () => {
   const stats = [
-    { value: '3+', label: 'Years Experience' },
-    { value: '15+', label: 'Competitions' },
-    { value: '8', label: 'Team Members' },
+    { value: '4+', label: 'Years Experience' },
+    { value: '10+', label: 'Competitions' },
+    { value: '2', label: 'Team Members' },
     { value: '2', label: 'Regional Awards' }
   ];
 
