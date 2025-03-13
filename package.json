@@ -3,11 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://thedragonbrothers.tech",
+  "homepage": "https://thedragonbrothers.tech",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:dev": "vite build --mode development",
+    "build:dev": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

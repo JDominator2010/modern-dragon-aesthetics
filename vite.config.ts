@@ -7,8 +7,6 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
-    host: "thedragonbrothers.tech",
-    port: 443
   },
   // Set the base path for GitHub Pages
   base: mode === 'production' ? process.env.VITE_BASE_PATH || '/' : '/',
