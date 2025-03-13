@@ -8,7 +8,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   server: {
     host: "thedragonbrothers.tech",
-    port: 8080,
+    port: 443
   },
   // Set the base path for GitHub Pages
   base: mode === 'production' ? process.env.VITE_BASE_PATH || '/' : '/',
