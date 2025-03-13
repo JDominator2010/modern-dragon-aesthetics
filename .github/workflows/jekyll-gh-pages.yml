@@ -56,7 +56,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: thedragonbrothers.tech
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
