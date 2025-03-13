@@ -11,8 +11,8 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="section-padding px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="contact" className="section-padding px-2">
+      <div className="max-w-6xl mx-auto"> 
         <div className="space-y-4 text-center mb-16">
           <div className="inline-block px-3 py-1 text-xs font-medium tracking-widest uppercase rounded bg-black text-white">
             Get In Touch
@@ -24,7 +24,7 @@ const ContactSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 items-start">
+        <div className="items-start">
           <div>
             <div className="bg-white rounded-lg p-8 shadow-md border border-gray-200">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
@@ -47,13 +47,58 @@ const ContactSection: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg mb-1">Email</h4>
-                    <a href="mailto:jackson@thedragonbrothers.tech" className="text-gray-700 hover:text-black transition-colors">
-                    jackson@thedragonbrothers.tech
-                    </a>
+                    <h4 className="font-semibold text-lg mb-1">Coach Email</h4>
+                    <a href="mailto:kedwards@northwestschools.net" className="text-gray-700 hover:text-black transition-colors">
+                    kedwards@northwestschools.net
+                    </a>                    
                   </div>
                 </div>
-                
+                <div className="flex items-start">
+                  <div className="mt-1 mr-4 p-2 bg-gray-100 rounded-md">
+                    <svg 
+                      className="w-6 h-6" 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth={2} 
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" 
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg mb-1">Jackson's Email</h4>
+                    <a href="mailto:jackson@thedragonbrothers.tech" className="text-gray-700 hover:text-black transition-colors">
+                    jackson@thedragonbrothers.tech
+                    </a>            
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="mt-1 mr-4 p-2 bg-gray-100 rounded-md">
+                    <svg 
+                      className="w-6 h-6" 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth={2} 
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" 
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg mb-1">Bobby's Email</h4>
+                    <a href="mailto:bobby@thedragonbrothers.tech" className="text-gray-700 hover:text-black transition-colors">
+                    bobby@thedragonbrothers.tech
+                    </a>                    
+                  </div>
+                </div>
 
               </div>
 
@@ -75,78 +120,7 @@ const ContactSection: React.FC = () => {
             </div>
           </div>
 
-          <div>
-            <div className="bg-white rounded-lg p-8 shadow-md border border-gray-200">
-              <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Your name"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Your email"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
-                      required
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    placeholder="Message subject"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={6}
-                    placeholder="Your message"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent resize-none"
-                    required
-                  ></textarea>
-                </div>
-                
 
-                
-                <button
-                  type="submit"
-                  className="px-6 py-3 bg-black text-white font-medium rounded-md hover:bg-black/80 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 transition-colors w-full"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
         </div>
       </div>
     </section>

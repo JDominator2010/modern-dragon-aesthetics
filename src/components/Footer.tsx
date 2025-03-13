@@ -108,7 +108,6 @@ const Footer: React.FC = () => {
             <a href="terms" className="text-gray-400 hover:text-white transition-colors text-sm">
               Terms of Service
             </a>
-
           </div>
         </div>
       </div>
